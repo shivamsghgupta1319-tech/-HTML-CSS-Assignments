@@ -1,0 +1,23 @@
+/*
+  Student Name: Shivam Gupta
+  Roll Number: 2510303486
+  Assignment: 11 - Task 03 (Tokens CSS)
+*/
+:root {
+  --primary-color: #1d3557;
+  --accent-color: #e63946;
+  --heading-size: 2rem;
+  --spacing: 16px;
+}
+
+body {
+  color: var(--primary-color);
+  padding: var(--spacing);
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: var(--accent-color);
+  font-size: var(--heading-size);
+  margin-bottom: var(--spacing);
+}

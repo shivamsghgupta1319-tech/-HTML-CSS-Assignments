@@ -1,0 +1,65 @@
+<!--
+  Student Name: Shivam Gupta
+  Roll Number: 2510303486
+  Assignment: 14 - Task 03 (Dashboard Grid Areas)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard Areas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .dashboard {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      grid-template-areas:
+        "header  header"
+        "sidebar main"
+        "footer  footer";
+      gap: 10px;
+      min-height: 350px;
+    }
+    header {
+      grid-area: header;
+      background-color: #1d3557;
+      color: white;
+      padding: 15px;
+    }
+    aside {
+      grid-area: sidebar;
+      background-color: #457b9d;
+      color: white;
+      padding: 15px;
+    }
+    main {
+      grid-area: main;
+      background-color: #f1f5f9;
+      padding: 15px;
+      border: 1px solid #ccc;
+    }
+    footer {
+      grid-area: footer;
+      background-color: #333333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard">
+    <header>Header (Spans both columns)</header>
+    <aside>Sidebar (200px)</aside>
+    <main>
+      <h2>Main Content</h2>
+      <p>Main area occupies 1fr of the remaining width.</p>
+    </main>
+    <footer>Footer (Spans both columns)</footer>
+  </div>
+</body>
+</html>

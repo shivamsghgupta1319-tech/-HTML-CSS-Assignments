@@ -1,0 +1,41 @@
+<!--
+  Student Name: Shivam Gupta
+  Roll Number: 2510303486
+  Assignment: 12 - Task 01 (Box Model Comparison)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Box Model Comparison</title>
+  <style>
+    .box1 {
+      width: 200px;
+      padding: 20px;
+      border: 5px solid blue;
+      box-sizing: content-box;
+      background-color: #e0f2fe;
+      margin-bottom: 20px;
+    }
+    .box2 {
+      width: 200px;
+      padding: 20px;
+      border: 5px solid red;
+      box-sizing: border-box;
+      background-color: #fee2e2;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Box Model Comparison</h1>
+  <div class="box1">
+    <strong>content-box</strong><br>
+    Width 200px + padding 40px + border 10px = 250px total rendered width.
+  </div>
+  <div class="box2">
+    <strong>border-box</strong><br>
+    Total rendered width stays 200px (padding and border included inside).
+  </div>
+</body>
+</html>

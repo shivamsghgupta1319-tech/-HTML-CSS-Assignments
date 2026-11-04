@@ -1,0 +1,39 @@
+======================================================================
+INVERTIS UNIVERSITY, BAREILLY
+B.Tech CSE - Second Year | HTML and CSS Introduction Lab (BCS352)
+Assignment 02: Pushing and Cloning a Repository
+Student Name: Shivam Gupta | Roll Number: 2510303486
+======================================================================
+
+--- Task 1: Create bare remote repository and configure origin ---
+PS C:\Users\shiva\OneDrive\Desktop\html-lab> git init --bare ../html-remote
+Initialized empty Git repository in C:/Users/shiva/OneDrive/Desktop/html-remote/
+
+PS C:\Users\shiva\OneDrive\Desktop\html-lab> git remote add origin ../html-remote
+PS C:\Users\shiva\OneDrive\Desktop\html-lab> git remote -v
+origin	../html-remote (fetch)
+origin	../html-remote (push)
+
+--- Task 2: Push commits to remote origin ---
+PS C:\Users\shiva\OneDrive\Desktop\html-lab> git push origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 578 bytes | 578.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+To ../html-remote
+ * [new branch]      main -> main
+
+--- Task 3: Clone remote repository into html-copy and verify commit history ---
+PS C:\Users\shiva\OneDrive\Desktop\html-lab> cd ..
+PS C:\Users\shiva\OneDrive\Desktop> git clone html-remote html-copy
+Cloning into 'html-copy'...
+done.
+
+PS C:\Users\shiva\OneDrive\Desktop> cd html-copy
+PS C:\Users\shiva\OneDrive\Desktop\html-copy> git log --oneline
+de28ea5 Add next meeting heading
+6ea1828 Add home page
+
+Verification: Both original commits ('Add home page' and 'Add next meeting heading') are successfully present in html-copy.

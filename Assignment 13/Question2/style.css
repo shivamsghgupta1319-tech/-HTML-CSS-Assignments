@@ -1,0 +1,38 @@
+/*
+  Student Name: Shivam Gupta
+  Roll Number: 2510303486
+  Subject: HTML and CSS Introduction Lab (BCS352)
+  University: Invertis University, Bareilly
+*/
+/* Centered Cards in Row */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 240px;
+  gap: 20px;
+  background-color: #f1f5f9;
+  padding: 20px;
+}
+.card {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 16px;
+  width: 140px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.card h3 {
+  margin: 0 0 10px 0;
+  color: #0f172a;
+}
+.card p {
+  margin: 0;
+  font-weight: bold;
+  color: #2563eb;
+}

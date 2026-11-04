@@ -1,0 +1,35 @@
+<!--
+  Student Name: Shivam Gupta
+  Roll Number: 2510303486
+  Assignment: 08 - Task 03 (Required Fields Form)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up (Required)</title>
+  <style>
+    .field {
+      margin-bottom: 12px;
+    }
+    label {
+      display: inline-block;
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Sign Up (Required Fields)</h1>
+  <form method="post" action="thanks.html">
+    <div class="field">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+    </div>
+    <div class="field">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

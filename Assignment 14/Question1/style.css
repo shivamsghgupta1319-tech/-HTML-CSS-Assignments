@@ -1,0 +1,21 @@
+/*
+  Student Name: Shivam Gupta
+  Roll Number: 2510303486
+  Subject: HTML and CSS Introduction Lab (BCS352)
+  University: Invertis University, Bareilly
+*/
+/* Three Column Equal Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  font-family: Arial, sans-serif;
+}
+.box {
+  background-color: #3b82f6;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 6px;
+}

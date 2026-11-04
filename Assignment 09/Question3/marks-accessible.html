@@ -1,0 +1,47 @@
+<!--
+  Student Name: Shivam Gupta
+  Roll Number: 2510303486
+  Assignment: 09 - Task 03 (Accessible Marks Table)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Accessible Marks Table</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 6px 12px;
+    }
+    caption {
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption>Marks of Class A</caption>
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Maths</th>
+        <th scope="col">Science</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Asha</th>
+        <td>78</td>
+        <td>85</td>
+      </tr>
+      <tr>
+        <th scope="row">Rohan</th>
+        <td>64</td>
+        <td>70</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
